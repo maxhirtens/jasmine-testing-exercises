@@ -21,6 +21,13 @@ function getCurrentUIValues() {
 // Put some default values in the inputs
 // Call a function to calculate the current monthly payment
 function setupIntialValues() {
+  const amount = document.getElementById("loan-amount");
+  const years = document.getElementById("loan-years");
+  const rate = document.getElementById("loan-rate");
+  amount.value = '$10,000';
+  years.value = '5';
+  rate.value = '3%';
+  update();
 }
 
 // Get the current values from the UI
@@ -32,6 +39,7 @@ function update() {
 // calculate the monthly payment.  The output should be a string
 // that always has 2 decimal places.
 function calculateMonthlyPayment(values) {
+
 }
 
 // Given a string representing the monthly payment value,
